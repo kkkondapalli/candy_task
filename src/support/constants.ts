@@ -1,0 +1,1 @@
+export const PAGINATION_LENGTH = 50;
