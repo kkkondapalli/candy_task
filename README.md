@@ -108,3 +108,14 @@ POST: /users - add new users
 PUT: /users/:id - update the exisiting store
 DELETE: /users/:id - delete user ( soft delete )
 ```
+
+### With Docker setup
+```
+Steps on DOCKER.md
+```
+
+### Postman collection
+candy-store.postman_collection.json
+
+### Swagger URL
+http://localhost:3000/api
