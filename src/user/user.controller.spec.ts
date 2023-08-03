@@ -10,15 +10,20 @@ describe('UserController', () => {
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
       controllers: [UserController],
-      providers: [UserService],
+      providers: [
+        {
+          provide: UserService,
+          useValue: {},
+        },
+      ],
       imports: [
         TypeOrmModule.forFeature([User]),
         TypeOrmModule.forRoot({
           type: 'mysql',
           host: '0.0.0.0',
           port: 3307,
-          username: 'sail',
-          password: 'password',
+          username: 'root',
+          password: 'Rimsys@2022',
           database: 'testing',
           entities: [User],
           synchronize: true,
